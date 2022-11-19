@@ -58,42 +58,6 @@
 			</div>
 				<!---- KEPUTUSAN PILIHAN RAYA / کڤوتوسن ڤيليهن راي ---->
 			<div class="modul-lebar keputusan-bekas">
-				<div class="keputusan latar-bn"> <!--style="box-shadow: yellow 0px 0px 20px, black 0px 0px 5px;"-->
-					<table>
-						<tr>
-							<td>
-								<div class="keputusan-anak-logo"><img src="./aset/parti/k-bn.SVG" style="width: 100px;" class="keputusan-anak-logo-gambar"></div>
-							</td>
-							<td class="keputusan-anak-nama-bekas">
-								<div class="keputusan-anak-nama">Barisan<br>Nasional</br>باريسن ناسيونل</div>
-							</td>
-							<td class="keputusan-anak-kerusi-angka-bekas">
-							<div class="keputusan-anak-kerusi">
-									<div id="keputusan-bn" class="keputusan-anak-kerusi-angka">0</div>
-								</div>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<script type="text/javascript">
-					function keputusanBN() {
-						var xhttp = new XMLHttpRequest();
-						xhttp.onreadystatechange = function() {
-							if (this.readyState == 4 && this.status == 200) {
-								document.getElementById("keputusan-bn").innerHTML = this.responseText;
-							}
-						};
-						xhttp.open("GET", "./keputusan/keputusan-bn.txt?dc="+"?dc="+(new Date()).getTime(), true);
-						xhttp.send();
-						console.log("BN-Berjaya");
-					}
-					
-					document.addEventListener('DOMContentLoaded', function () {
-						keputusanBN();
-						setInterval(keputusanBN, 30000);
-						console.log("BN-Mula");
-					});
-				</script>
 				<div class="keputusan latar-ph">
 					<table>
 						<tr>
@@ -128,6 +92,78 @@
 						keputusanPH();
 						setInterval(keputusanPH, 30000);
 						console.log("PH-Mula");
+					});
+				</script>
+				<div class="keputusan latar-ps">
+					<table>
+						<tr>
+							<td>
+								<div class="keputusan-anak-logo"><img src="./aset/parti/k-wr.SVG" style="width: 100px;" class="keputusan-anak-logo-gambar"></div>
+							</td>
+							<td class="keputusan-anak-nama-bekas">
+								<div class="keputusan-anak-nama">Gabungan<br>Parti Sarawak</br>ݢابوڠن ڤرتي سراوق</div>
+							</td>
+							<td class="keputusan-anak-kerusi-angka-bekas">
+							<div class="keputusan-anak-kerusi">
+									<div id="keputusan-ps" class="keputusan-anak-kerusi-angka">0</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<script type="text/javascript">
+					function keputusanPS() {
+						var xhttp = new XMLHttpRequest();
+						xhttp.onreadystatechange = function() {
+							if (this.readyState == 4 && this.status == 200) {
+								document.getElementById("keputusan-ps").innerHTML = this.responseText;
+							}
+						};
+						xhttp.open("GET", "./keputusan/keputusan-ps.txt?dc="+"?dc="+(new Date()).getTime(), true);
+						xhttp.send();
+						console.log("PS-Berjaya");
+					}
+					
+					document.addEventListener('DOMContentLoaded', function () {
+						keputusanPS();
+						setInterval(keputusanPS, 30000);
+						console.log("PS-Mula");
+					});
+				</script>
+				<div class="keputusan latar-bn"> <!--style="box-shadow: yellow 0px 0px 20px, black 0px 0px 5px;"-->
+					<table>
+						<tr>
+							<td>
+								<div class="keputusan-anak-logo"><img src="./aset/parti/k-bn.SVG" style="width: 100px;" class="keputusan-anak-logo-gambar"></div>
+							</td>
+							<td class="keputusan-anak-nama-bekas">
+								<div class="keputusan-anak-nama">Barisan<br>Nasional</br>باريسن ناسيونل</div>
+							</td>
+							<td class="keputusan-anak-kerusi-angka-bekas">
+							<div class="keputusan-anak-kerusi">
+									<div id="keputusan-bn" class="keputusan-anak-kerusi-angka">0</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<script type="text/javascript">
+					function keputusanBN() {
+						var xhttp = new XMLHttpRequest();
+						xhttp.onreadystatechange = function() {
+							if (this.readyState == 4 && this.status == 200) {
+								document.getElementById("keputusan-bn").innerHTML = this.responseText;
+							}
+						};
+						xhttp.open("GET", "./keputusan/keputusan-bn.txt?dc="+"?dc="+(new Date()).getTime(), true);
+						xhttp.send();
+						console.log("BN-Berjaya");
+					}
+					
+					document.addEventListener('DOMContentLoaded', function () {
+						keputusanBN();
+						setInterval(keputusanBN, 30000);
+						console.log("BN-Mula");
 					});
 				</script>
 				<div class="keputusan latar-pn">
@@ -200,42 +236,6 @@
 						keputusanGT();
 						setInterval(keputusanGT, 30000);
 						console.log("GT-Mula");
-					});
-				</script>
-				<div class="keputusan latar-ps">
-					<table>
-						<tr>
-							<td>
-								<div class="keputusan-anak-logo"><img src="./aset/parti/k-wr.SVG" style="width: 100px;" class="keputusan-anak-logo-gambar"></div>
-							</td>
-							<td class="keputusan-anak-nama-bekas">
-								<div class="keputusan-anak-nama">Gabungan<br>Parti Sarawak</br>ݢابوڠن ڤرتي سراوق</div>
-							</td>
-							<td class="keputusan-anak-kerusi-angka-bekas">
-							<div class="keputusan-anak-kerusi">
-									<div id="keputusan-ps" class="keputusan-anak-kerusi-angka">0</div>
-								</div>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<script type="text/javascript">
-					function keputusanPS() {
-						var xhttp = new XMLHttpRequest();
-						xhttp.onreadystatechange = function() {
-							if (this.readyState == 4 && this.status == 200) {
-								document.getElementById("keputusan-ps").innerHTML = this.responseText;
-							}
-						};
-						xhttp.open("GET", "./keputusan/keputusan-ps.txt?dc="+"?dc="+(new Date()).getTime(), true);
-						xhttp.send();
-						console.log("PS-Berjaya");
-					}
-					
-					document.addEventListener('DOMContentLoaded', function () {
-						keputusanPS();
-						setInterval(keputusanPS, 30000);
-						console.log("PS-Mula");
 					});
 				</script>
 				<div class="keputusan latar-rs">
