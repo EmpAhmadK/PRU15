@@ -6,7 +6,7 @@ html {
 
 body {
 	padding: 25px;
-	background: #FFFFFF;
+	background: #202020;
 	font-family: 'Montserrat', 'Segoe UI', 'IBM Plex Sans Arabic', 'Al Bayan', 'Ebrima', sans-serif;
 }
 
@@ -134,19 +134,20 @@ h3 {
 .utama {
 	margin: auto;
 	padding: 15px;
-	max-width: 1200px;
-	background: #f0f0f0;
+	max-width: 1000px;
+	background: #404040;
 }
 
 .tajuk {
 	margin: auto;
 	padding: 15px;
-	max-width: 1200px;
+	max-width: 1000px;
 	font-family: 'Montserrat', 'Segoe UI', 'IBM Plex Sans Arabic', 'Al Bayan', 'Ebrima', sans-serif;
 	font-size: 2em;
 	font-weight: 600;
 	text-align: left;
-	background: white;
+	background: #303030;
+	color: #FDFDFD;
 }
 
 .tajuk-isi {
@@ -246,9 +247,11 @@ h3 {
 
 .pembawah {
 	margin: auto;
-	padding: 15px;
-	max-width: 1200px;
-	background: #fff;
+	margin-bottom: -20px;
+	padding-top: 5px;
+	max-width: 1000px;
+	background: #404040;
+	color: #fdfdfd;
 	text-align: center;
 }
 
@@ -722,7 +725,8 @@ h3 {
 }
 
 .butang-segarsemula {
-	background: #25295D;
+	background: #FDFDFD;
+	color: #202020;
 	width: 370px;
 	padding: 15px;
 	margin: auto;
