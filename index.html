@@ -130,42 +130,6 @@
 						console.log("PS-Mula");
 					});
 				</script>
-				<div class="keputusan latar-pn">
-					<table>
-						<tr>
-							<td>
-								<div class="keputusan-anak-logo"><img src="./aset/parti/k-pn.SVG" style="width: 100px;" class="keputusan-anak-logo-gambar"></div>
-							</td>
-							<td class="keputusan-anak-nama-bekas">
-								<div class="keputusan-anak-nama">Perikatan<br>Nasional</br>ڤرايکتن ناسيونل</div>
-							</td>
-							<td class="keputusan-anak-kerusi-angka-bekas">
-							<div class="keputusan-anak-kerusi">
-									<div id="keputusan-pn" class="keputusan-anak-kerusi-angka">0</div>
-								</div>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<script type="text/javascript">
-					function keputusanPN() {
-						var xhttp = new XMLHttpRequest();
-						xhttp.onreadystatechange = function() {
-							if (this.readyState == 4 && this.status == 200) {
-								document.getElementById("keputusan-pn").innerHTML = this.responseText;
-							}
-						};
-						xhttp.open("GET", "./keputusan/keputusan-pn.txt?dc="+"?dc="+(new Date()).getTime(), true);
-						xhttp.send();
-						console.log("PN-Berjaya");
-					}
-					
-					document.addEventListener('DOMContentLoaded', function () {
-						keputusanPN();
-						setInterval(keputusanPN, 30000);
-						console.log("PN-Mula");
-					});
-				</script>
 				<div class="keputusan latar-bn"> <!--style="box-shadow: yellow 0px 0px 20px, black 0px 0px 5px;"-->
 					<table>
 						<tr>
@@ -200,6 +164,42 @@
 						keputusanBN();
 						setInterval(keputusanBN, 30000);
 						console.log("BN-Mula");
+					});
+				</script>
+				<div class="keputusan latar-pn">
+					<table>
+						<tr>
+							<td>
+								<div class="keputusan-anak-logo"><img src="./aset/parti/k-pn.SVG" style="width: 100px;" class="keputusan-anak-logo-gambar"></div>
+							</td>
+							<td class="keputusan-anak-nama-bekas">
+								<div class="keputusan-anak-nama">Perikatan<br>Nasional</br>ڤرايکتن ناسيونل</div>
+							</td>
+							<td class="keputusan-anak-kerusi-angka-bekas">
+							<div class="keputusan-anak-kerusi">
+									<div id="keputusan-pn" class="keputusan-anak-kerusi-angka">0</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<script type="text/javascript">
+					function keputusanPN() {
+						var xhttp = new XMLHttpRequest();
+						xhttp.onreadystatechange = function() {
+							if (this.readyState == 4 && this.status == 200) {
+								document.getElementById("keputusan-pn").innerHTML = this.responseText;
+							}
+						};
+						xhttp.open("GET", "./keputusan/keputusan-pn.txt?dc="+"?dc="+(new Date()).getTime(), true);
+						xhttp.send();
+						console.log("PN-Berjaya");
+					}
+					
+					document.addEventListener('DOMContentLoaded', function () {
+						keputusanPN();
+						setInterval(keputusanPN, 30000);
+						console.log("PN-Mula");
 					});
 				</script>
 				<div class="keputusan latar-gt">
