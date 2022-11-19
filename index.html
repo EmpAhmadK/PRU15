@@ -202,42 +202,6 @@
 						console.log("PN-Mula");
 					});
 				</script>
-				<div class="keputusan latar-gt">
-					<table>
-						<tr>
-							<td>
-								<div class="keputusan-anak-logo"><img src="./aset/parti/k-gt.SVG" style="width: 100px;" class="keputusan-anak-logo-gambar"></div>
-							</td>
-							<td class="keputusan-anak-nama-bekas">
-								<div class="keputusan-anak-nama">Gerakan<br>Tanah Air</br>ݢرقن تانه ا<span style="bottom:5px;position:relative;">ء</span>ير</div>
-							</td>
-							<td class="keputusan-anak-kerusi-angka-bekas">
-							<div class="keputusan-anak-kerusi">
-									<div id="keputusan-gt" class="keputusan-anak-kerusi-angka">0</div>
-								</div>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<script type="text/javascript">
-					function keputusanGT() {
-						var xhttp = new XMLHttpRequest();
-						xhttp.onreadystatechange = function() {
-							if (this.readyState == 4 && this.status == 200) {
-								document.getElementById("keputusan-gt").innerHTML = this.responseText;
-							}
-						};
-						xhttp.open("GET", "./keputusan/keputusan-gt.txt?dc="+"?dc="+(new Date()).getTime(), true);
-						xhttp.send();
-						console.log("GT-Berjaya");
-					}
-					
-					document.addEventListener('DOMContentLoaded', function () {
-						keputusanGT();
-						setInterval(keputusanGT, 30000);
-						console.log("GT-Mula");
-					});
-				</script>
 				<div class="keputusan latar-rs">
 					<table>
 						<tr>
@@ -294,6 +258,42 @@
 						mulaKemasKini();
 						console.log("Mula");
 					});*/
+				</script>
+				<div class="keputusan latar-gt">
+					<table>
+						<tr>
+							<td>
+								<div class="keputusan-anak-logo"><img src="./aset/parti/k-gt.SVG" style="width: 100px;" class="keputusan-anak-logo-gambar"></div>
+							</td>
+							<td class="keputusan-anak-nama-bekas">
+								<div class="keputusan-anak-nama">Gerakan<br>Tanah Air</br>ݢرقن تانه ا<span style="bottom:5px;position:relative;">ء</span>ير</div>
+							</td>
+							<td class="keputusan-anak-kerusi-angka-bekas">
+							<div class="keputusan-anak-kerusi">
+									<div id="keputusan-gt" class="keputusan-anak-kerusi-angka">0</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<script type="text/javascript">
+					function keputusanGT() {
+						var xhttp = new XMLHttpRequest();
+						xhttp.onreadystatechange = function() {
+							if (this.readyState == 4 && this.status == 200) {
+								document.getElementById("keputusan-gt").innerHTML = this.responseText;
+							}
+						};
+						xhttp.open("GET", "./keputusan/keputusan-gt.txt?dc="+"?dc="+(new Date()).getTime(), true);
+						xhttp.send();
+						console.log("GT-Berjaya");
+					}
+					
+					document.addEventListener('DOMContentLoaded', function () {
+						keputusanGT();
+						setInterval(keputusanGT, 30000);
+						console.log("GT-Mula");
+					});
 				</script>
 				<div class="keputusan latar-bl">
 					<table>
