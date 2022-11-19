@@ -727,7 +727,7 @@ h3 {
 .butang-segarsemula {
 	background: #FDFDFD;
 	color: #202020;
-	width: 370px;
+	max-width: 270px;
 	padding: 15px;
 	margin: auto;
 	border-radius: 8px;
@@ -839,21 +839,23 @@ h3 {
 	position: fixed;
 	top: -100px;
 	left: 0;
-	background: rgba(255,255,255,0.9);
+	background: rgba(48,48,48,0.9);
 	padding:10px;
 	width: 100%;
 	transition: 0.3s;
+	color: #fdfdfd;
 }
 
 .apung {
 	position: fixed;
 	top: -100px;
 	left: 0;
-	background: rgba(255,255,255,0.9);
+	background: rgba(48,48,48,0.9);
 	padding:10px;
 	width: 100%;
 	top: 0;
 	transition: 0.3s;
+	color: #fdfdfd;
 }
 
 .keputusan-menang {
